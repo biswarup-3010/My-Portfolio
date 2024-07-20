@@ -1,0 +1,20 @@
+/* Add this to your global CSS file */
+.bg-dark-blue {
+  background-color: #020617; /* Tailwind CSS custom dark blue */
+}
+.options {
+  color: #cbd5e1;
+}
+.options:hover {
+  transform: scale(1.3);
+  transition: 0.8s;
+  color: #f8fafc;
+}
+.text-lg {
+  color: #e2e8f0;
+}
+span {
+  color: #67e8f9;
+  font-size: 1.2em;
+  font-weight: bolder;
+}

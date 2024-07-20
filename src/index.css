@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  z-index: -3px;
+  background-color: #1e293b;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  scroll-behavior: smooth;
+  font-style: normal;
+  /* margin-left: 4px;
+  border-left: 2px solid white; */
+}
+* {
+  list-style: none;
+}

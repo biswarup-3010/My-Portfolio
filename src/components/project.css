@@ -1,0 +1,10 @@
+.bgc-custom {
+  background-color: #334155;
+  border: 2px solid #0f172a;
+}
+.bgc-custom:hover {
+  transform: scale(1.01);
+}
+.text-color {
+  color: #e2e8f0;
+}
