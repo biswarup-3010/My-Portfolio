@@ -26,16 +26,8 @@ export default function About() {
     {
       id: 0,
       heading: "Programming Languages",
-      tools: [
-        <SiCplusplus />,
-        <FaJava />,
-        <FaPython />,
-        <RiJavascriptFill />,
-        <PiFileSqlLight />,
-        <SiMysql />,
-      ],
+      tools: [<SiCplusplus />, <FaJava />, <FaPython />, <RiJavascriptFill />],
     },
-
     {
       id: 2,
       heading: "Web Technologies /Frame Works",
@@ -201,7 +193,7 @@ export default function About() {
                   showcasing exceptional coding skills.
                 </li>
                 <li>
-                  Solved <span> 600+</span> Questions over all the coding
+                  Solved <span>600+</span> Questions over all the coding
                   platforms
                 </li>
               </ol>
