@@ -1,14 +1,23 @@
-import { React, useState, useRef } from "react";
+import { React, useState, useRef, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import { Rating } from "primereact/rating";
 import { FaHeart } from "react-icons/fa";
+import AlertComponent from "./AlertComponent";
 
 export default function ContactUsPage() {
   const [value, setValue] = useState(null);
-  const [name, setName] = useState(null);
-  const [mail, setMail] = useState(null);
-  const [msg, setMsg] = useState(null);
+  const [msgSnt, setMsgSnt] = useState(false);
+  const [visible, setVisible] = useState(false);
+
   const form = useRef();
+
+  useEffect(() => {
+    if (visible) {
+      setTimeout(() => {
+        setVisible(false);
+      }, 2000); // 2000ms = 2 seconds
+    }
+  }, [visible]);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -19,15 +28,14 @@ export default function ContactUsPage() {
       })
       .then(
         () => {
-          alert("Message has been sent");
-          setMail(null);
-          setMsg(null);
-          setName(null);
-          setValue(null);
           form.current.reset();
+          setMsgSnt(true);
+          setVisible(true);
           console.log("SUCCESS!");
         },
         (error) => {
+          setMsgSnt(false);
+          setVisible(true);
           console.log("FAILED...", error.text);
         }
       );
@@ -43,7 +51,9 @@ export default function ContactUsPage() {
           <center className="text-xl font-bold m-5">Feed Back</center>
         </span>
         <br />
+
         <form ref={form} onSubmit={sendEmail}>
+          {visible && <AlertComponent type={msgSnt} />}
           <div className="mx-auto w-full min-h-64 bg-gradient-to-b from-indigo-100/1`0 to-blue-100/10 rounded-[10px] p-4 sm:w-3/4 md:w-2/5">
             <li className="text-blue-100 mt-8">
               Name <br />{" "}
@@ -51,7 +61,6 @@ export default function ContactUsPage() {
                 className="h-8 w-full rounded-[5px] bg-blue-100/20 focus:outline-none p-2"
                 type="text"
                 name="user_name"
-                onChange={(e) => setName(e.value)}
                 required
               />
             </li>
@@ -62,7 +71,6 @@ export default function ContactUsPage() {
                 type="email"
                 className="h-8 w-full rounded-[5px] bg-blue-100/20 focus:outline-none p-2"
                 name="user_email"
-                onChange={(e) => setMail(e.value)}
                 required
               />
             </li>
@@ -73,7 +81,6 @@ export default function ContactUsPage() {
                 className="min-h-16 w-full rounded-[5px] bg-blue-100/20 focus:outline-none p-2"
                 placeholder="your feedback/queries here..."
                 name="message"
-                onChange={(e) => setMsg(e.value)}
               ></textarea>
             </li>
             <br />
@@ -99,6 +106,7 @@ export default function ContactUsPage() {
             </li>
           </div>
         </form>
+
         <p className="flex flex-row footer bottom-0 text-blue-100/40 text-sm gap-2 justify-center">
           it's made with{" "}
           <FaHeart
