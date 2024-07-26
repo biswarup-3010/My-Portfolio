@@ -61,14 +61,14 @@ let MyProjects = [
 ];
 const WorkingProjects = [
   {
-    ProjectName: "Pollution And Environment Protection NGO",
+    ProjectName: "EcoMind NGO",
     tools: [
       <GrReactjs />,
       <RiTailwindCssFill />,
       <IoLogoNodejs />,
       <IoLogoFirebase />,
     ],
-    desc: "Designing a NGO website for Protecting our Earth from Pollutions",
+    desc: "Designing a NGO website for raise awareness among the peoples for protecting our Earth from the Dark future of Global Warming",
     // link: "#",
     // github: "#",
   },
