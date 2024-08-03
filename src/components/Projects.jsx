@@ -69,8 +69,8 @@ const WorkingProjects = [
       <IoLogoFirebase />,
     ],
     desc: "Designing a NGO website for raise awareness among the peoples for protecting our Earth from the Dark future of Global Warming",
-    // link: "#",
-    // github: "#",
+    link: "https://biswarup-3010.github.io/eco-mind/",
+    github: "https://github.com/biswarup-3010/eco-mind",
   },
   {
     ProjectName: "Disease Prediction ML Model",
