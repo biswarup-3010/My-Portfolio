@@ -58,6 +58,14 @@ let MyProjects = [
     link: "https://biswarup-3010.github.io/To-do-List/",
     github: "https://github.com/biswarup-3010/To-do-List",
   },
+  {
+    ProjectName: "Cricket Score Counter",
+    tools: [<FaHtml5 />, <FaCss3Alt />, <IoLogoJavascript />],
+    desc: "Designed and developed a Cricket match score counter application using HTML, CSS, and JavaScript, providing an engaging and responsive user experience.",
+
+    link: "https://biswarup-3010.github.io/CricketScoreCounter/",
+    github: "https://github.com/biswarup-3010/CricketScoreCounter",
+  },
 ];
 const WorkingProjects = [
   {
