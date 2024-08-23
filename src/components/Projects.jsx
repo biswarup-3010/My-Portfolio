@@ -42,19 +42,10 @@ let MyProjects = [
     github: "https://github.com/biswarup-3010/tic-tac-toe",
   },
   {
-    ProjectName: "Stone-Paper-Sissor Game",
-    tools: [<GrReactjs />, <FaBootstrap />],
-    desc: "Designed and developed a interactive Stone-Paper-Scissor game using React JS, Bootstrap, providing an engaging and responsive user experience.",
-
-    link: "https://biswarup-3010.github.io/StonePaperSisorGame/",
-    github: "https://github.com/biswarup-3010/StonePaperSisorGame",
-  },
-  {
     ProjectName: "To-Do List",
 
     tools: [<FaHtml5 />, <FaCss3Alt />, <IoLogoJavascript />],
     desc: "Designed and developed a interactive Todo List application using HTML, CSS, and JavaScript, providing an engaging and responsive user experience.",
-
     link: "https://biswarup-3010.github.io/To-do-List/",
     github: "https://github.com/biswarup-3010/To-do-List",
   },
