@@ -81,8 +81,8 @@ const WorkingProjects = [
       <SiMongodb />,
     ],
     desc: "Designing a Cricket score website for normal use of a cricket match to display scores and tracking runs",
-    link: "https://biswarup-3010.github.io/eco-mind/",
-    github: "https://cricket-match-score-iwel.vercel.app/",
+    link: "https://cricket-match-score-iwel.vercel.app/",
+    github: "https://github.com/biswarup-3010/CricketMatchScore",
   },
   {
     ProjectName: "Disease Prediction ML Model",
