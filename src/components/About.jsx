@@ -15,6 +15,7 @@ import { RiJavascriptFill, RiTailwindCssFill } from "react-icons/ri"; //<RiTailw
 import { FaBootstrap } from "react-icons/fa"; //<FaBootstrap />
 import { IoLogoFirebase } from "react-icons/io5"; //<IoLogoFirebase />
 import { IoLogoNodejs } from "react-icons/io5"; //<IoLogoNodejs />
+import { SiMongodb } from "react-icons/si"; //mongodb
 import { FaPython } from "react-icons/fa6"; //<FaPython />
 import { SiNumpy } from "react-icons/si"; //<SiNumpy />
 import { SiPandas } from "react-icons/si"; //<SiPandas />
@@ -36,6 +37,7 @@ export default function About() {
         <FaCss3Alt />,
         <IoLogoJavascript />,
         <GrReactjs />,
+        <IoLogoNodejs />,
         <FaBootstrap />,
         <RiTailwindCssFill />,
       ],
@@ -43,7 +45,7 @@ export default function About() {
     {
       id: 1,
       heading: "Database Technologies",
-      tools: [<PiFileSqlLight />, <SiMysql />],
+      tools: [<PiFileSqlLight />, <SiMysql />, <SiMongodb />],
     },
     {
       id: 3,
@@ -58,7 +60,6 @@ export default function About() {
         <SiMicrosoftword />,
         <SiMicrosoftexcel />,
         <SiMicrosoftpowerpoint />,
-        <FaKaggle />,
       ],
     },
     {

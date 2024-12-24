@@ -1,4 +1,4 @@
-import React, { useCallback } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import Particles from "react-tsparticles";
 import { loadSlim } from "tsparticles-slim";
 import "./HomPage.css"; // Make sure to import the CSS file
@@ -13,6 +13,33 @@ const AddAnimation = () => {
     await console.log(container);
   }, []);
 
+  //colour changing
+  // const [bgColor, setBgColor] = useState("#082f49"); // Default color (night)
+
+  // useEffect(() => {
+  //   const updateBackgroundColor = () => {
+  //     const seconds = new Date().getSeconds(); // Get current second (0-59)
+
+  //     // Create a color array for each second (you can modify this)
+  //     const colors = [
+  //       "#020617", // 0 sec - Sunrise (Orange)
+  //       "#0c0a09",
+  //       "#052e16",
+  //       "#042f2e",
+  //       "#172554",
+  //       "#500724",
+  //       "#4c0519",
+  //     ];
+
+  //     // Color change for each second (0-59)
+  //     setBgColor(colors[seconds % colors.length]); // Cycle through colors array
+  //   };
+
+  //   updateBackgroundColor(); // Set initial color
+  //   const timer = setInterval(updateBackgroundColor, 10000); // Update every second
+
+  //   return () => clearInterval(timer); // Cleanup on component unmount
+  // }, []);
   return (
     <div>
       <Particles

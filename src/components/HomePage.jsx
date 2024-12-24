@@ -6,8 +6,11 @@ import { FaGithub } from "react-icons/fa";
 import { RiReactjsFill } from "react-icons/ri";
 import { FaDatabase } from "react-icons/fa6";
 import { FaJava } from "react-icons/fa6";
-// import { BiLogoSpringBoot } from "react-icons/bi";
+import { SiMongodb } from "react-icons/si";
 import { SiTailwindcss } from "react-icons/si";
+import { SiExpress } from "react-icons/si";
+import { TbBrandNodejs } from "react-icons/tb";
+import { SiThealgorithms } from "react-icons/si";
 import { ReactTyped } from "react-typed";
 import "./HomPage.css";
 import AddAnimation from "./AddAnimation";
@@ -31,7 +34,12 @@ export default function HomePage({ pic }) {
                 </h4>
                 <ReactTyped
                   className="font-bold text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl"
-                  strings={["Developer", "Programmer", "Coder"]}
+                  strings={[
+                    "Developer_",
+                    "Programmer_",
+                    "Coder_",
+                    "System Engineer_",
+                  ]}
                   typeSpeed={70}
                   backSpeed={50}
                   loop={true}
@@ -109,11 +117,14 @@ export default function HomePage({ pic }) {
                     Currently working on
                   </h1>
                   <div className="flex space-x-5">
+                    <SiMongodb className="text-xl t-colour-change md:text-2xl hover:scale-110 duration-200  cursor-pointer" />
+                    <SiExpress className="text-xl t-colour-change md:text-2xl hover:scale-110 duration-200  cursor-pointer" />
                     <RiReactjsFill className="text-xl t-colour-change md:text-2xl hover:scale-110 duration-200  cursor-pointer" />
-                    <SiTailwindcss className="text-xl t-colour-change md:text-2xl hover:scale-110 duration-200  cursor-pointer" />
-                    <FaJava className="text-xl t-colour-change md:text-2xl hover:scale-110 duration-200  cursor-pointer" />
-                    {/* <BiLogoSpringBoot className="text-xl t-colour-change md:text-2xl hover:scale-110 duration-200  cursor-pointer" /> */}
-                    <FaDatabase className="text-xl t-colour-change md:text-2xl hover:scale-110 duration-200  cursor-pointer" />
+                    <TbBrandNodejs className="text-xl t-colour-change md:text-2xl hover:scale-110 duration-200  cursor-pointer" />
+                    {/* <SiTailwindcss className="text-xl t-colour-change md:text-2xl hover:scale-110 duration-200  cursor-pointer" /> */}
+                    {/* <FaJava className="text-xl t-colour-change md:text-2xl hover:scale-110 duration-200  cursor-pointer" /> */}
+                    {/* <FaDatabase className="text-xl t-colour-change md:text-2xl hover:scale-110 duration-200  cursor-pointer" /> */}
+                    <SiThealgorithms className="text-xl t-colour-change md:text-2xl hover:scale-110 duration-200  cursor-pointer" />
                   </div>
                 </div>
               </div>

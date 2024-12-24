@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./project.css";
 import { GrReactjs } from "react-icons/gr";
+import { SiMongodb } from "react-icons/si"; //mongo
 import { TbBrandJavascript } from "react-icons/tb"; //<GrReactjs /> react js
 import { FaHtml5 } from "react-icons/fa6"; //<FaHtml5 /> html
 import { IoLogoJavascript } from "react-icons/io5"; //<IoLogoJavascript /> js
@@ -70,6 +71,18 @@ const WorkingProjects = [
     desc: "Designing a NGO website for raise awareness among the peoples for protecting our Earth from the Dark future of Global Warming",
     link: "https://biswarup-3010.github.io/eco-mind/",
     github: "https://github.com/biswarup-3010/eco-mind",
+  },
+  {
+    ProjectName: "Cricket Match Score",
+    tools: [
+      <GrReactjs />,
+      <RiTailwindCssFill />,
+      <IoLogoNodejs />,
+      <SiMongodb />,
+    ],
+    desc: "Designing a Cricket score website for normal use of a cricket match to display scores and tracking runs",
+    link: "https://biswarup-3010.github.io/eco-mind/",
+    github: "https://cricket-match-score-iwel.vercel.app/",
   },
   {
     ProjectName: "Disease Prediction ML Model",
